@@ -2,12 +2,12 @@
 [Online demo](http://l9hmadtxc-site.htempurl.com/public/) available here
 
 # Requirements
-PHP >= 5.6
-PHPUnit 5.4
-cURL
-Composer
-NPM
-Bower
+* PHP >= 5.6  
+* PHPUnit 5.4  
+* cURL  
+* Composer  
+* NPM
+* Bower
 
 # Installation
 
