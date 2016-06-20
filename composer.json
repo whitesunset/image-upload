@@ -1,0 +1,15 @@
+{
+  "name" : "tjournal/vacancy-php",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "TJ\\Uploader\\": "src/app/vendor/tjournal/file-uploader/src"
+    }
+  },
+  "post-autoload-dump": "Autoloader\\Composer::generate",
+  "require": {
+    "aws/aws-sdk-php": "^3.18",
+    "easmith/selectel-storage": "dev-master",
+    "php-di/php-di": "^5.3"
+  }
+}

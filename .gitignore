@@ -1,0 +1,12 @@
+*~
+.DS_Store
+/bower_components/
+/node_modules/
+/vendor/
+.idea/misc.xml
+.idea/modules.xml
+.idea/php-facade.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/copyright/profiles_settings.xml
+/src/app/config_dev.php

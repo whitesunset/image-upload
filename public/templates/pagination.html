@@ -1,0 +1,19 @@
+<script type="text/html" id="tpl-pagination">
+    <ul class="pagination">
+        <li class="<% if(currentPage == 1) print('disabled') %>"><a href="javascript:void(0);" data-page="1">«</a></li>
+
+        <% if(pagesCount > pagesLimit && currentPage > pagesLimit / 2) { %>
+        <li><span class="disabled">...</span></li>
+        <% } %>
+
+        <% _.each(pages, function(page){ %>
+        <li class="<% if(currentPage == page) print('active') %>"><a href="javascript:void(0);" data-page="<%= page %>"><%= page %></a></li>
+        <% }); %>
+
+        <% if(pagesCount > pagesLimit && currentPage + pagesLimit / 2 < pagesCount) { %>
+        <li><span class="disabled">...</span></li>
+        <% } %>
+
+        <li class="<% if(currentPage == pagesCount) print('disabled') %>"><a href="javascript:void(0);" data-page="<%= pagesCount %>">»</a></li>
+    </ul>
+</script>

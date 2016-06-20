@@ -1,0 +1,58 @@
+<script type="text/html" id="tpl-upload">
+    <div class="panel panel-default upload">
+        <div class="panel-body">
+            <form action="/public/upload.php" method="POST" class="form-horizontal" enctype="multipart/form-data">
+                <fieldset>
+                    <ul class="errors-list" id="upload_messages"></ul>
+                    <div class="form-group">
+                        <label class="col-xs-3 col-md-2 control-label">
+                            Provider
+                        </label>
+                        <div class="col-xs-9 col-md-10">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="storage" value="1" checked>
+                                    AWS
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="storage" value="2">
+                                    Selectel
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 col-md-2 control-label">Source</label>
+                        <div class="col-xs-9 col-md-10">
+                            <div class="btn-group btn-group-justified btn-group-raised" data-field="source_type">
+                                <span class="btn btn-raised active" data-content="file">From File</span>
+                                <span class="btn" data-content="url">From URL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group source-file">
+                        <label class="col-xs-3 col-md-2 control-label">File</label>
+                        <div class="col-xs-9 col-md-10">
+                            <input type="hidden" name="MAX_FILE_SIZE" value="30000"/>
+                            <input type="file" name="file" id="" multiple>
+                            <input type="text" readonly class="form-control file-overlay" placeholder="Choose image...">
+                        </div>
+                    </div>
+                    <div class="form-group source-url">
+                        <label class="col-xs-3 col-md-2 control-label">File</label>
+                        <div class="col-xs-9 col-md-10">
+                            <input type="url" name="url" class="form-control" placeholder="Input URL...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12 text-right">
+                            <button type="submit" class="btn btn-raised btn-success">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</script>

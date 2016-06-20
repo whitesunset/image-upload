@@ -1,0 +1,28 @@
+<script type="text/html" id="tpl-image">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <img class="storage" src="/public/images/storage/<%= storage %>.png" alt="Storage">
+            <div class="name"><%= name %></div>
+            <div class="actions text-right">
+                <button class="btn btn-info btn-xs" data-action="get-code" title="Get Image">
+                    <svg class="icon icon-code">
+                        <use xlink:href="#icon-code"></use>
+                    </svg>
+                </button>
+                <button class="btn btn-info btn-xs" data-action="get-link" title="Get URL">
+                    <svg class="icon icon-chain">
+                        <use xlink:href="#icon-chain"></use>
+                    </svg>
+                </button>
+                <button class="btn btn-info btn-xs" data-action="delete" title="Delete">
+                    <svg class="icon icon-trash-o">
+                        <use xlink:href="#icon-trash-o"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="panel-body">
+            <img src="<%= url %>" alt="<%= name %>">
+        </div>
+    </div>
+</script>
