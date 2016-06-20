@@ -1,7 +1,9 @@
 <script type="text/html" id="tpl-image">
     <div class="panel panel-default">
         <div class="panel-heading">
+            <% if (storage) { %>
             <img class="storage" src="/public/images/storage/<%= storage %>.png" alt="Storage">
+            <% } %>
             <div class="name"><%= name %></div>
             <div class="actions text-right">
                 <button class="btn btn-info btn-xs" data-action="get-code" title="Get Image">

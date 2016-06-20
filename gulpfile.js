@@ -11,7 +11,7 @@ var env = 'prod';;
 gulp.task('js', function () {
 	return gulp.src([
 		'bower_components/js-md5/build/md5.min.js',
-		'bower_components/clipboard/dist/clipboard.min.js3',
+		'bower_components/clipboard/dist/clipboard.min.js',
 		'bower_components/jquery/dist/jquery.min.js',
 		'bower_components/underscore/underscore-min.js',
 		'bower_components/backbone/backbone-min.js',
