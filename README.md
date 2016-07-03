@@ -1,6 +1,3 @@
-# Demo
-[Online demo](http://l9hmadtxc-site.htempurl.com/public/) available here
-
 # Requirements
 * PHP >= 5.6  
 * PHPUnit 5.4  
